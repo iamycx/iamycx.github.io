@@ -43,6 +43,8 @@ comments: true
 
 安装好了之后在开始菜单中找到Git Bash并打开
 
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-a293ada2a07e2cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 再打开的 Git Bash 窗口中执行如下命令，设置Git用户名和邮箱：
 
 ```
@@ -60,9 +62,12 @@ $ ssh-keygen -t rsa -C "{name @site .com}"    // 用你的邮箱替换{name @sit
 一直敲回车直到命令完成，此时在用户目录下（Windows7系统目录  C:\Users\你的计算机用户名 ）出现了一个`.ssh`文件夹，此文件夹中有`id_rsa`和`id_rsa.pub`两个文件。打开`id_rsa.pub`文件，并复制全部内容。
 打开Github网页，并登录后，点击右上角的头像，点击Settings
 
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-b9f207dfc9b17370.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
  点击SSH and GPG keys，点击New SSH key，在Key中粘贴`id_rsa.pub`文件全部内容，点Add SSH key。
 
- 
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-0950f7a4102eb6f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ##  建立个人Github Pages
 
 
@@ -76,11 +81,9 @@ $ ssh-keygen -t rsa -C "{name @site .com}"    // 用你的邮箱替换{name @sit
 
 直接Fork[主题]( https://github.com/iamycx/iamycx.github.io )到自己的仓库，点击Settings
 
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-71e99489d7710dbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- 
-
-
-
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-71130aede30c2021.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
  重命名为username.github.io 用你的用户名替代username， 此时你会发现已经可以通过`http://{你的Github用户名}.github.io `访问你Fork下来的网站啦！
 
@@ -105,6 +108,8 @@ clone（克隆）你自己的远程仓库：
 ```
 $ git clone https: //github.com/{username}/{username}.github.io.git   // 用你的Github用户名替换{username}
 ```
+
+![image.png](http://upload-images.jianshu.io/upload_images/3688263-3c97cd38e7897320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这时所有远程仓库里的源码都拷贝到`E:/Repositories/{username}.github.io`这个文件夹里来了。
 
