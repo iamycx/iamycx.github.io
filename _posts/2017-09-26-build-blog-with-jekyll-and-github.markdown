@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  Github+Jekyll半小时搭建个人网站
@@ -8,10 +7,8 @@ tags: GitHub 搭建网站 安装
 comments: true
 ---
 
-
 * content
 {:toc}
-
 
 通过Github来搭建网站挺简单的，按顺序一步一步来就好，整个过程大概不超过一小时。
 
@@ -26,12 +23,14 @@ comments: true
 1.注册Github
 - 如果已经有账号了，就跳过这步
 
-
-
 2.安装Git环境
+
 3.SSH配置
+
 4.建立个人Github Pages
+
 5.写博客并同步到网站
+
 6.本地安装
 - Ruby和DevKit
 - Jekyll
@@ -39,14 +38,15 @@ comments: true
 
 ## 安装Git环境
 - Windows7下安装Git
+
  [Git下载]( https://git-for-windows.github.io/)
+
 安装好了之后在开始菜单中找到Git Bash并打开
 
-
 再打开的 Git Bash 窗口中执行如下命令，设置Git用户名和邮箱：
+
 ```
 $ git config -- global user.name "{username}" // 用你的用户名替换{username}  
-
 $ git config -- global user.email "{name@site.com}" // 用你的邮箱替换{name@site.com}
 ```
 
@@ -55,8 +55,7 @@ $ git config -- global user.email "{name@site.com}" // 用你的邮箱替换{nam
 为了与Github的远程仓库传输，我们需要进行SSH加密设置
 在刚才的 Git Bash 窗口执行
 ```
-$ ssh-keygen -t rsa -C "{name @site .com}" // 用你的邮箱替换{name @site .com}
-
+$ ssh-keygen -t rsa -C "{name @site .com}"    // 用你的邮箱替换{name @site .com}
 ```
 一直敲回车直到命令完成，此时在用户目录下（Windows7系统目录  C:\Users\你的计算机用户名 ）出现了一个`.ssh`文件夹，此文件夹中有` id_rsa `和` id_rsa.pub `两个文件。打开` id_rsa.pub`文件，并复制全部内容。
 打开Github网页，并登录后，点击右上角的头像，点击Settings
@@ -81,7 +80,7 @@ $ ssh-keygen -t rsa -C "{name @site .com}" // 用你的邮箱替换{name @site .
 
 
 
- 重命名为username.github.io 用你的用户名替代username， 此时你会发现已经可以通过 ` http://{你的Github用户名}.github.io`  访问你fork下来的网站啦！
+ 重命名为username.github.io 用你的用户名替代username， 此时你会发现已经可以通过 ` http://{你的Github用户名}.github.io `  访问你fork下来的网站啦！
 
 
 
@@ -93,19 +92,18 @@ $ ssh-keygen -t rsa -C "{name @site .com}" // 用你的邮箱替换{name @site .
 
 - clone仓库
 打开Git Bash， 输入以下命令切换到你想放置本地代码仓库的位置：
+
 ```
 $ cd {本地路径}     // 比如： cd e:/workspace
-
 ```
+
 clone（克隆）你自己的远程仓库：
-```
-$ git clone https: //github.com/{username}/{username}.github.io.git // 用你的Github用户名替换{username}
 
 ```
+$ git clone https: //github.com/{username}/{username}.github.io.git   // 用你的Github用户名替换{username}
+```
 
- 
 这时所有远程仓库里的源码都拷贝到 ` e:/Repositories/{username}.github.io`  这个文件夹里来了。
-
 
 
 - 写文章
