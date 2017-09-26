@@ -12,17 +12,17 @@ title: Brian's Homepage
 # the subpath of your site, e.g. /blog
 baseurl: "" 
 # the base hostname & protocol for your site
-url: "http://brianway.github.io" 
+url: "http://iamycx.github.io" 
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username:  brianway
+github_username:  iamycx
 email: weichuyang@163.com
 weibo_username: brianway
 linkedin_username: weichuyang
 
-description_footer: 魏楚阳的博客
+description_footer: 大于的博客
 
 # comments
 # two ways to comment, only choose one, and use your own short name
