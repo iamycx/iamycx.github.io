@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Brian's Homepage
+title: YCX's Homepage
 # brief-intro: Developer
 
 # the subpath of your site, e.g. /blog
@@ -18,26 +18,26 @@ permalink: /:year/:month/:day/:title/
 
 # other links
 github_username:  iamycx
-email: weichuyang@163.com
-weibo_username: brianway
-linkedin_username: weichuyang
+email: 956428086@qq.com
+weibo_username: Yuu_CX
+zhihu_username: hsymgz
 
 description_footer: 大于的博客
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: brianway
-duoshuo_url: "http://brianway.github.io"
+duoshuo_shortname: iamycx
+duoshuo_url: "http://iamycx.github.io"
 #disqus_shortname: gaohaoyang
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 01ead8d132fad393952a3d004d92453e
+baidu_tongji_id: a4382262381450e212ef9ebea279a61a
 # google 分析追踪id
-google_analytics_id: UA-77782495-1
+google_analytics_id: UA-107051235-1
 
 
 # Build settings
