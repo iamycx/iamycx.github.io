@@ -68,13 +68,7 @@ icon: heart
 
 -----
 
-- 2016
-   - 完成了个人爬虫项目 [webporter](https://github.com/brianway/webporter)，荣登 Github 单日 trending 总榜第七名和 Java 榜第一名；[知乎爬虫分析博文](http://brianway.github.io/2016/12/20/webporter-zhihu-user-analysis/)登上了几个网站的头条，微信搜“爬取知乎60万”即可看到各种转载
-   - 使用Spring Boot+MySQL+jQuery+Bootstrap 参与开发了一个 ZooKeeper 网页管理工具；学习了 docker 的基本使用；了解了 JUnit+Mockito，CAS 认证，nginx 等相关知识
-   - 读完了《深入理解 Java 虚拟机》、《架构探险》、《大型网站技术架构》、《图解http》、敏捷软件开发》、《Head First 设计模式》、《Java 并发编程实战》、《Spring 3.x 企业开发实战》、《lucene in action》、《java 多线程编程核心技术》(高洪岩)
-   - 刷完了牛客网 [算法精品课](https://www.nowcoder.com/courses/1)，相关代码在 GitHub 仓库 [algorithms-learning](https://github.com/brianway/algorithms-learning)；刷完了 Coursera 上普林斯顿的算法课程 [算法 Part I](https://www.coursera.org/course/algs4partI)，完成所有编程作业并获得 98.4%（[成绩单](http://7xph6d.com1.z0.glb.clouddn.com/%E9%9A%8F%E7%AC%94_part-I-total.png)）
-   - 学习 SpringMVC+MyBatis 的使用，整理了系列学习笔记博客近 40 篇(GitHub 仓库 [springmvc-mybatis-learning](https://github.com/brianway/springmvc-mybatis-learning))，还被清华大学出版社编辑联系出书[(附图片)](http://7xph6d.com1.z0.glb.clouddn.com/%E9%9A%8F%E7%AC%94_%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E5%87%BA%E7%89%88%E7%A4%BE%E8%81%94%E7%B3%BB%E6%88%91.png)，感觉自己水平太菜，婉拒了；入门 spring 并整理相关代码至 GitHub 仓库 [spring-learning](https://github.com/brianway/spring-learning)
-- 2015 及以前
+- 2016 及以前
    - CS 相关的学习不够系统，目标不够坚定，走了很多弯路。
 
 ---
