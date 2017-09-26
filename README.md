@@ -13,7 +13,7 @@ Runing on Github + Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/ga
 
 这是我的个人网站，基于jekyll。**如果觉得不错，请先在这个仓库上点个star吧，这也是对我的肯定和鼓励，谢谢了。**
 
-我的个人网站地址: [Brian's Personal Website](http://iamycx.github.io/)
+我的个人网站地址: [YCX's Personal Website](http://iamycx.github.io/)
 
 该网站使用的是 [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io) 最新重构的主题
 
