@@ -51,7 +51,8 @@ icon: heart
 
 如果您觉得本站的文章对您有帮助，请扫描下方二维码赞助我继续写作，谢谢支持！
 
-
+![支付宝](/assets/images/alipay_small.png)
+![微信](/assets/images/wechatpay_small.png)
 
 ---
 
