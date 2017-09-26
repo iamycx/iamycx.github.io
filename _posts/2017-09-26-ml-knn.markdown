@@ -1,0 +1,157 @@
+---
+layout: post
+title:  机器学习实战——KNN实现
+date:   2017-09-26 17:24:11 +08:00
+category: 其他
+tags: Python 机器学习 KNN
+comments: true
+---
+
+* content
+{:toc}
+
+
+1、计算已知类别数据集中的点与当前点之间的距离；
+2、按照距离递增次序排序；
+3、选取与当前点距离最小的k个点；
+4、确定前k个点所在类别的出现频率；
+5、返回前k个点出现频率最高的类别作为当前点的预测分类。
+
+```python
+# -*- coding: utf-8 -*-
+
+from numpy import *
+import operator
+
+'''构造数据'''
+def createDataSet():
+    characters=array([[1.0,1.1],[1.0,1.0],[0,0],[0,0.1]])
+    labels=['A','A','B','B']
+    return characters,labels
+
+def classify(sample,dataSet,labels,k):
+    dataSetSize=dataSet.shape[0] #统计数据集的个数：4个
+    '''下面四行计算待分类的点和训练集中的任一点的欧式距离'''
+    diffMat=tile(sample,(dataSetSize,1))-dataSet #样本与每个数据集中数据的差值构成矩阵
+    sqDiffMat=diffMat**2 #差值矩阵求平方
+    sqDistances=sqDiffMat.sum(axis=1) #差值矩阵中每项的两个数字求和
+    distances=sqDistances**0.5 #开方
+    sortedDistIndicies=distances.argsort() #按distances中元素进行升序排序后得到的对应下标的列表
+    '''选择距离最小的k个点'''
+    classCount={}
+    for i in range(k):
+        voteIlabel=labels[sortedDistIndicies[i]]
+        classCount[voteIlabel]=classCount.get(voteIlabel,0)+1
+    '''从大到小排序'''
+    sortedClassCount=sorted(classCount.items(),key=operator.itemgetter(1),reverse=True)
+    return sortedClassCount[0][0]
+
+def main():
+    sample=[0,0]
+    k=3
+    group,labels=createDataSet()
+    label=classify(sample,group,labels,k)
+    print("Classified Label:"+label)
+
+if __name__=='__main__':
+    main()
+```
+KNN在数字识别上的应用：
+数据集点[这里](http://download.csdn.net/detail/zouxy09/6610571)，准确率为98.94%。
+```python
+# -*- coding: utf-8 -*-
+
+from numpy import *
+import operator
+import os 
+
+def classify(sample,dataSet,labels,k):
+    dataSetSize=dataSet.shape[0] #统计数据集的个数：4个
+    '''下面四行计算待分类的点和训练集中的任一点的欧式距离'''
+    diffMat=tile(sample,(dataSetSize,1))-dataSet #样本与每个数据集中数据的差值构成矩阵
+    sqDiffMat=diffMat**2 #差值矩阵求平方
+    sqDistances=sqDiffMat.sum(axis=1) #差值矩阵中每项的两个数字求和
+    distances=sqDistances**0.5 #开方
+    sortedDistIndicies=distances.argsort() #按distances中元素进行升序排序后得到的对应下标的列表
+    '''选择距离最小的k个点'''
+    classCount={}
+    for i in range(k):
+        voteIlabel=labels[sortedDistIndicies[i]]
+        classCount[voteIlabel]=classCount.get(voteIlabel,0)+1
+    '''从大到小排序'''
+    sortedClassCount=sorted(classCount.items(),key=operator.itemgetter(1),reverse=True)
+    return sortedClassCount[0][0]
+
+def img2vector(filename):
+     row = 32
+     col = 32 
+     imgVector = zeros((1,row*col))
+     file = open(filename)
+     for r in range(row):
+          lineStr = file.readline()
+          for c in range(col):
+               imgVector[0,c+r*32] = int(lineStr[c])
+               
+     return imgVector
+
+#载入数据集
+def loadDataSet():  
+    ## step 1: Getting training set  
+    dataSetDir = 'C:/Users/Rainey/Desktop/digits/'  
+    trainingFileList = os.listdir(dataSetDir + 'trainingDigits') # load the training set  
+    numSamples = len(trainingFileList)  
+  
+    train_x = zeros((numSamples, 1024))  
+    train_y = []  
+    for i in range(numSamples):  
+        filename = trainingFileList[i]  
+  
+        # get train_x  
+        train_x[i, :] = img2vector(dataSetDir + 'trainingDigits/%s' % filename)   
+  
+        # get label from file name such as "1_18.txt"  
+        label = int(filename.split('_')[0]) # return 1  
+        train_y.append(label)  
+  
+    ## step 2: Getting testing set    
+    testingFileList = os.listdir(dataSetDir + 'testDigits') # load the testing set  
+    numSamples = len(testingFileList)  
+    test_x = zeros((numSamples, 1024))  
+    test_y = []  
+    for i in range(numSamples):  
+        filename = testingFileList[i]  
+  
+        # get train_x  
+        test_x[i, :] = img2vector(dataSetDir + 'testDigits/%s' % filename)   
+  
+        # get label from file name such as "1_18.txt"  
+        label = int(filename.split('_')[0]) # return 1  
+        test_y.append(label)  
+  
+    return train_x, train_y, test_x, test_y  
+  
+# test hand writing class  
+def testHandWritingClass():  
+    ## step 1: load data  
+    print('loading data...')
+    train_x, train_y, test_x, test_y = loadDataSet()  
+  
+    ## step 2: training...  
+    pass  
+    print('training...')
+  
+    ## step 3: testing 
+    print('testing...')
+    numTestSamples = test_x.shape[0]  
+    matchCount = 0  
+    for i in range(numTestSamples):  
+        predict = classify(test_x[i], train_x, train_y, 3)  
+        if predict == test_y[i]:  
+            matchCount += 1  
+    accuracy = float(matchCount) / numTestSamples  
+  
+    ## step 4: show the result  
+    print("step 4: show the result...")  
+    print('The classify accuracy is: %.2f%%' % (accuracy * 100))
+testHandWritingClass()
+```
