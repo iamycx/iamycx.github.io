@@ -113,11 +113,11 @@ if __name__=="__main__":
     plotBestFit(weight,dataMatrix,labelMat)  
 ```
 
-[梯度上升](http://upload-images.jianshu.io/upload_images/3688263-ac2c1e9dc721f752.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![梯度上升](http://upload-images.jianshu.io/upload_images/3688263-ac2c1e9dc721f752.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-[随机梯度上升](http://upload-images.jianshu.io/upload_images/3688263-30e207e1ae0ae73a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![随机梯度上升](http://upload-images.jianshu.io/upload_images/3688263-30e207e1ae0ae73a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-[改进的随机梯度上升](http://upload-images.jianshu.io/upload_images/3688263-3f7b290d3fe722f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![改进的随机梯度上升](http://upload-images.jianshu.io/upload_images/3688263-3f7b290d3fe722f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 样本集为:
 ```
