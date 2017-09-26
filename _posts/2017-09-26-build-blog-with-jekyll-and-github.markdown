@@ -82,7 +82,7 @@ $ ssh-keygen -t rsa -C "{name @site .com}"    // 用你的邮箱替换{name @sit
 
 
 
- 重命名为username.github.io 用你的用户名替代username， 此时你会发现已经可以通过 ` http://{你的Github用户名}.github.io `  访问你Fork下来的网站啦！
+ 重命名为username.github.io 用你的用户名替代username， 此时你会发现已经可以通过`http://{你的Github用户名}.github.io `访问你Fork下来的网站啦！
 
 
 
@@ -112,7 +112,7 @@ $ git clone https: //github.com/{username}/{username}.github.io.git   // 用你�
 - 写文章
 
 
-打开本地仓库的`_posts`文件夹，你的所有博文都将放在这里，写新博文只需要新建一个标准文件名的文件，在文件中编写文章内容。 比如我们fork的模版中`_posts` 文件夹里有一篇 `2016-03-23-hello-world.markdown` ，你的文件命名也要严格遵循 `年-月-日-文章标题.文档格式` 这样的格式，尤其要注意`月份和日期一定是两位数 ` 。 
+打开本地仓库的`_posts`文件夹，你的所有博文都将放在这里，写新博文只需要新建一个标准文件名的文件，在文件中编写文章内容。 比如我们fork的模版中`_posts` 文件夹里有一篇 `2016-03-23-hello-world.markdown` ，你的文件命名也要严格遵循 `年-月-日-文章标题.文档格式` 这样的格式，尤其要注意`月份和日期一定是两位数`。 
 
 推荐使用Markdown语言写文章，windows下推荐为知笔记这个软件编写Markdown文本。
 
@@ -150,7 +150,7 @@ $ cd { local repository} // { local repository}替换成你的本地仓库的目
 如果一路下来都没错误的话，通过在浏览器地址栏输入`http://localhost:4000/ `回车就已经可以看到自己网站的模样啦。
 
 
-只要`jekyll serve`服务开着，你的本地仓库文件有任何更新，本地网站刷新都能马上看到，ok啦！
+只要`jekyll serve`服务开着，你的本地仓库文件有任何更新，本地网站刷新都能马上看到，ok！
 
 
 
