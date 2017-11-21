@@ -1,9 +1,7 @@
 
 ---
-
-
 layout: post
-title:Visual Studio 2010环境安装IT++函数库
+title: Visual Studio 2010环境安装IT++函数库
 date:   2017-11-21 18:36:11 +08:00
 category: 其他
 tags: IT++ ITPP VS2010
