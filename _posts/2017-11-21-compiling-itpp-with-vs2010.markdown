@@ -3,7 +3,7 @@ layout: post
 title:  Visual Studio 2010环境安装IT++函数库
 date:   2017-11-21 18:34:11 +08:00
 category: 其他
-tags: IT++ ITPP 安装 VS2010
+tags: IT++  安装 VS2010
 comments: true
 ---
 
@@ -12,7 +12,25 @@ comments: true
 {:toc}
 
 
+
+
+
+
+
+
+
+
+
+
 听师兄说IT++库可以用来做ICA，google找了半天资料才装好，为了后来的同学们少走弯路，把安装过程记录下来。
+
+
+
+
+
+
+
+
 
 
 #  [下载](https://sourceforge.net/projects/itpp/files/itpp/4.2.0/itpp-4.2.tar.bz2/download/) 并解压IT++ 4.2.0

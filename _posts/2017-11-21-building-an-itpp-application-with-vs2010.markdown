@@ -1,5 +1,7 @@
 
 ---
+
+
 layout: post
 title: 在Visual Studio 2010环境下创建一个IT++应用程序
 date:   2017-11-21 18:36:11 +08:00
@@ -13,7 +15,23 @@ comments: true
 {:toc}
 
 
+
+
+
+
+
+
+
+
 上一篇讲到了在VS2010下安装IT++函数库，完成后就要涉及到怎么使用了。这里以64位WIN7为例。
+
+
+
+
+
+
+
+
 - 下载[ t emplate Wizard ](http://herve.boeglen.free.fr/itpp_windows/chap2/itpp_matmex_template_2010.zip)， 解压后得到Express和VCWizards这两个文件夹。如果你64位系统，将他们拷到 C:\ProgramFiles (x86)\Microsoft Visual Studio 10.0\VC。 就是拷到VS2010的安装目录里面的VC子目录里面去，32位系统的也类似操作。会提示替换合并，全部点‘确定’。
 
 
