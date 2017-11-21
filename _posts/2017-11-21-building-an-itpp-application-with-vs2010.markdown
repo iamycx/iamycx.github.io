@@ -3,7 +3,7 @@
 
 
 layout: post
-title: 在Visual Studio 2010环境下创建一个IT++应用程序
+title:Visual Studio 2010环境安装IT++函数库
 date:   2017-11-21 18:36:11 +08:00
 category: 其他
 tags: IT++ ITPP VS2010
@@ -23,7 +23,17 @@ comments: true
 
 
 
+
+
+
+
 上一篇讲到了在VS2010下安装IT++函数库，完成后就要涉及到怎么使用了。这里以64位WIN7为例。
+
+
+
+
+
+
 
 
 
